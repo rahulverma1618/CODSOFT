@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="base_green">#01DC50</color>
+    <color name="dark_grey">#2C2A2A</color>
+
+    <color name="base_blue">#399BED</color>
+    <color name="base_start_color">#2B8AE8</color>
+    <color name="base_end_color">#57BFF6</color>
+
+    <color name="active_task_color">#01D542</color>
+    <color name="completed_task_color">#0342CE</color>
+    <color name="pending_task_color">#FF1F39</color>
+
+    <color name="custom_status_bar_color">#FFFFFF</color> <!-- Change to your preferred color -->
+
+</resources>

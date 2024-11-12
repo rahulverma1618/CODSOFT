@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="#FFFFFF">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FAFAFA"
+            android:orientation="horizontal"
+            android:paddingVertical="4dp"
+            android:paddingEnd="10dp">
+
+<!--            <CheckBox-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:maxWidth="40dp"-->
+<!--                android:minWidth="0dp"-->
+<!--                android:visibility="gone"/>-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_weight="10"
+                android:paddingHorizontal="0dp"
+                android:paddingVertical="3dp"
+                android:paddingEnd="10dp"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_editor_absoluteY="4dp">
+
+                <TextView
+                    android:id="@+id/TaskDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/ubuntu"
+                    android:maxLines="2"
+                    android:text="Lorem ipsum dolor sit what yess are u stupid amet"
+                    android:textAlignment="textStart"
+                    android:textColor="#5F5B5B"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/TaskTitle" />
+
+                <TextView
+                    android:id="@+id/TaskTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/ubuntu"
+                    android:maxLines="1"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="Complete Homework"
+                    android:textAlignment="textStart"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                tools:layout_editor_absoluteX="207dp"
+                tools:layout_editor_absoluteY="4dp">
+
+                <TextView
+                    android:id="@+id/TaskStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="23dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="done"
+                    android:textAlignment="textEnd"
+                    android:textColor="#5F5B5B"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toTopOf="@+id/TaskStartTime"
+                    app:layout_constraintEnd_toStartOf="@+id/TaskStatusBtn"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/TaskStartTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:paddingRight="0dp"
+                    android:text="07/10/24  08:30"
+                    android:textAlignment="textEnd"
+                    android:textColor="#5F5B5B"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toTopOf="@+id/TaskEndTime"
+                    app:layout_constraintEnd_toEndOf="@+id/TaskStatusBtn"
+                    app:layout_constraintTop_toBottomOf="@+id/TaskStatus"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/TaskEndTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+                    android:paddingRight="0dp"
+                    android:text="05/11/24  09:30"
+                    android:textAlignment="textEnd"
+                    android:textColor="#FF062F"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/TaskStartTime"
+                    app:layout_constraintTop_toBottomOf="@+id/TaskStartTime"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <Button
+                    android:id="@+id/TaskStatusBtn"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:width="8dp"
+                    android:background="@drawable/task_status"
+                    android:backgroundTint="@color/active_task_color"
+                    android:text=""
+                    app:layout_constraintBottom_toTopOf="@+id/TaskStartTime"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

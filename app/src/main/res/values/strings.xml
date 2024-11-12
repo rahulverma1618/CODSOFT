@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Taskify</string>
+
+    <!-- res/values/strings.xml -->
+    <string-array name="status_options_array">
+        <item>Status</item> <!-- Placeholder hint -->
+        <item>Active</item>
+        <item>Done</item>
+    </string-array>
+
+</resources>

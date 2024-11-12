@@ -1,0 +1,44 @@
+{
+  "tasks": [
+    {
+      "taskPriority": 1,
+      "taskName": "Complete Homework",
+      "desc": "Finish math and science assignments.",
+      "status": 1,
+      "startTime": 1697635200000,
+      "endTime": 1697721600000
+    },
+    {
+      "taskPriority": 2,
+      "taskName": "Grocery Shopping",
+      "desc": "Buy vegetables and fruits for the week.",
+      "status": 1,
+      "startTime": 1697725200000,
+      "endTime": 1697728800000
+    },
+    {
+      "taskPriority": 3,
+      "taskName": "Exercise",
+      "desc": "Go for a 30-minute run in the park.",
+      "status": 0,
+      "startTime": 1697631600000,
+      "endTime": 1697635200000
+    },
+    {
+      "taskPriority": 5,
+      "taskName": "Meeting with Team",
+      "desc": "Discuss project updates and deadlines.",
+      "status": 1,
+      "startTime": 1697805600000,
+      "endTime": 1697809200000
+    },
+    {
+      "taskPriority": 4,
+      "taskName": "Read a Book",
+      "desc": "Read 'The Alchemist' by Paulo Coelho.",
+      "status": 0,
+      "startTime": 1697887200000,
+      "endTime": 1697890800000
+    }
+  ]
+}

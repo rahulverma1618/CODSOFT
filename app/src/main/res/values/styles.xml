@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabIndicatorColor">@color/base_blue</item>
+        <item name="tabTextColor">@color/black</item>
+        <item name="tabSelectedTextColor">@color/base_blue</item>
+        <item name="tabIndicatorGravity">top</item>
+        <item name="tabBackground">@color/white</item>
+    </style>
+
+    <style name="BaseGreen" parent="Widget.AppCompat.Button">
+        <item name="backgroundTint">@color/base_green</item>
+    </style>
+
+    <style name="BaseBlue" parent="Widget.AppCompat.Button">
+        <item name="backgroundTint">@color/base_blue</item>
+    </style>
+
+    <style name="DarkGrey" parent="Widget.AppCompat.Button">
+        <item name="backgroundTint">@color/dark_grey</item>
+    </style>
+
+    <style name="Grey" parent="Widget.AppCompat.Button">
+        <item name="backgroundTint">@color/dark_grey</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+
+</resources>
